@@ -4,15 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>팬아트 업로드</title>
-<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;line-height:1.7}</style>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;line-height:1.7}
+.cta{display:flex;align-items:center;justify-content:center;gap:14px;min-height:88px;margin:28px 0;padding:16px 24px;border-radius:20px;border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#ff5fa2,#a855f7) border-box;color:#333;font-size:1.35rem;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(168,85,247,.4);animation:pulse 2s ease-in-out infinite;transition:transform .15s}
+.cta:hover,.cta:focus-visible{transform:translateY(-3px) scale(1.02);animation:none;outline:3px solid #ffd1e6}
+.cta img{width:52px;height:52px;object-fit:contain}
+@keyframes pulse{50%{box-shadow:0 8px 36px rgba(255,95,162,.75)}}
+@media (prefers-reduced-motion:reduce){.cta{animation:none}}
+</style>
 </head>
 <body>
 <h1>팬아트 업로드</h1>
-<p>방송 시청자가 구글 로그인 없이 팬아트를 올리면, 방장이 검수한 뒤 방장의 구글 드라이브 공개 폴더에 정리해 주는 서비스입니다.</p>
+<p>시청자가 팬아트를 올리면 방장에게 검토를 요청하고, 승인 후 구글 드라이브에 정리해 주는 서비스입니다.</p>
 <ul>
   <li>시청자: 업로드 페이지에서 사진과 제작자·컨셉 정보를 올립니다.</li>
   <li>방장: 관리자 화면에서 승인하거나 반려합니다.</li>
 </ul>
+<a class="cta" href="https://fanart-uploader-274217022019.asia-northeast3.run.app/" target="_blank" rel="noopener"><img src="icon.png" alt="">팬아트 업로드하러 가기 →</a>
 <p><a href="privacy.html">개인정보처리방침</a> · <a href="terms.html">서비스 약관</a></p>
 <p>문의: <a href="mailto:hello.nullchong@gmail.com">hello.nullchong@gmail.com</a></p>
 </body>
